@@ -1,0 +1,353 @@
+doctype html
+html
+	head
+		title #{title} - FullStack Vietnam
+		link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous")
+		link(rel='stylesheet', href='/css/style.css')
+		script(src="https://code.jquery.com/jquery-3.3.1.min.js")
+
+	body
+		main 
+			section.header
+				.container-fluid.pl-0
+					.row
+						.col
+							nav.navbar.navbar-expand-lg.navbar-light
+								img(src="./img/logo.1.png" alt="_blank" srcset="" style="width: 3%;height: auto;")
+								span(style="font-weight: bolder;margin-left: 5px;") K-BOARD-TASK
+								.mr-auto
+								form.form-inline.my-2.my-lg-0
+									input.form-control(type="search" placeholder="Tìm kiếm" aria-label="Search" autocomplete="off")
+								a.name-user.ml-3.mr-2(href="#") Trần Quốc Trung
+								i.fas.fa-user
+								p.infor 
+									a(href="#") Thông tin chi tiết
+								p.log-out
+									a(href="#") Đăng xuất
+			section.col-menu
+				.container-fluid.pl-0.s
+					.row
+						.col-sm-1.full-menu
+							ul.list-group
+								li.list-group-item 
+									i.fas.fa-th
+								li.list-group-item 
+									i.fas.fa-plus
+								li.list-group-item 
+									i.fas.fa-user
+								li.list-group-item 
+									i.fas.fa-cog
+								li.list-group-item 
+									i.fas.fa-save
+								li.list-group-item 
+									i.fas.fa-question
+						.col-12.pr-0.task
+							.row
+								.col-sm-12.col-lg-4.mt-3
+									.card.border-dark.mb-3
+										.card-header.bg-dark Nhiệm vụ
+											i.fas.fa-sync-alt
+										.card-body.text-dark
+											.container-fluid.a
+												.row
+													.col-10
+														.row.show
+															.col-10
+																.row
+																	.col-2.text-primary.tittle
+																		span N
+																	.col-8.pr-0
+																		p.text-primary(style="font-size: 15px;") 
+																			strong K-BD-9: 
+																			| Thử nghiệm
+																		p.text-info(style="font-size: 15px;") Thử nghiệm
+															.col-1.mt-3.pr-0.pl-0
+																button.play
+																	i.fas.fa-arrow-up
+														.row.test
+															.col
+																hr
+														.row.test
+															.col-4(style="font-size: 12px;")
+																i.fas.fa-briefcase.mr-1
+																span chưa xác định 
+															.col-4(style="font-size: 12px;")
+																span chưa xác định 
+															.col-4(style="font-size: 12px;")
+																span chưa xác định 
+														.row.test
+															.col
+																hr
+														.row.test
+															.col-6
+																i.fas.fa-user.mr-1
+																span Quốc Trung
+															.col-6.text-danger.text-right
+																span 6 months ago
+														.row.test
+															.col
+																hr
+														.row.test
+															.col-6
+																i.mr-1.fas.fa-cog
+																span Quốc Trung
+															.col-6.text-danger.text-right
+																span 5 months ago
+													.col-2.arrow(style="border-top-right-radius: 1rem;border-bottom-right-radius: 1rem;")
+														i.fas.fa-arrow-right
+										.card-body.text-dark
+											.container-fluid.a(style="border-left: 5px solid lightgreen")
+												.row
+													.col-10
+														.row.show
+															.col-10
+																.row
+																	.col-2.text-primary.tittle
+																		span(style="background: lightgreen;color: green;") M
+																	.col-9.pr-0
+																		p(style="font-size: 15px; color: green") 
+																			strong K-BD-9: FULL
+																			br
+																			i Xem PDF
+																			i.fas.fa-file-pdf.ml-2
+																		p.text-info(style="font-size: 15px;") Thử nghiệm
+															.col-2.mt-3.pr-0.pl-0
+																button.play
+																	i.fas.fa-arrow-up
+														.row.test
+															.col
+																hr
+														.row.test
+															.col-4(style="font-size: 12px;")
+																i.fas.fa-briefcase.mr-1
+																span chưa xác định 
+															.col-4(style="font-size: 12px;")
+																span chưa xác định 
+															.col-4(style="font-size: 12px;")
+																span chưa xác định 
+														.row.test
+															.col
+																hr
+														.row.test
+															.col-6
+																i.fas.fa-user.mr-1
+																span Quốc Trung
+															.col-6.text-danger.text-right
+																span 6 months ago
+														.row.test
+															.col
+																hr
+														.row.test
+															.col-6
+																i.mr-1.fas.fa-cog
+																span Quốc Trung
+															.col-6.text-danger.text-right
+																span 5 months ago
+													.col-2.arrow(style="border-top-right-radius: 1rem;border-bottom-right-radius: 1rem;")
+														i.fas.fa-arrow-right
+								.col-sm-12.col-lg-4.mt-3
+									.card.border-dark.mb-3
+										.card-header.bg-info Đang thực hiện
+											i.fas.fa-sync-alt
+										.card-body.text-dark
+											.container-fluid.a
+												.row
+													.col-10
+														.row.show
+															.col-10
+																.row
+																	.col-2.text-primary.tittle
+																		span N
+																	.col-8.pr-0
+																		p.text-primary(style="font-size: 15px;") 
+																			strong K-BD-9: 
+																			| Thử nghiệm
+																		p.text-info(style="font-size: 15px;") Thử nghiệm
+															.col-1.mt-3.pr-0.pl-0
+																button.play
+																	i.fas.fa-arrow-up
+														.row.test
+															.col
+																hr
+														.row.test
+															.col-4(style="font-size: 12px;")
+																i.fas.fa-briefcase.mr-1
+																span chưa xác định 
+															.col-4(style="font-size: 12px;")
+																span chưa xác định 
+															.col-4(style="font-size: 12px;")
+																span chưa xác định 
+														.row.test
+															.col
+																hr
+														.row.test
+															.col-6
+																i.fas.fa-user.mr-1
+																span Quốc Trung
+															.col-6.text-danger.text-right
+																span 6 months ago
+														.row.test
+															.col
+																hr
+														.row.test
+															.col-6
+																i.mr-1.fas.fa-cog
+																span Quốc Trung
+															.col-6.text-danger.text-right
+																span 5 months ago
+													.col-2.arrow(style="border-top-right-radius: 1rem;border-bottom-right-radius: 1rem;")
+														i.fas.fa-arrow-right
+										.card-body.text-dark
+											.container-fluid.a(style="border-left: 5px solid lightgreen")
+												.row
+													.col-10
+														.row.show
+															.col-10
+																.row
+																	.col-2.text-primary.tittle
+																		span(style="background: lightgreen;color: green;") M
+																	.col-9.pr-0
+																		p(style="font-size: 15px; color: green") 
+																			strong K-BD-9: FULL
+																			br
+																			i Xem PDF
+																			i.fas.fa-file-pdf.ml-2
+																		p.text-info(style="font-size: 15px;") Thử nghiệm
+															.col-2.mt-3.pr-0.pl-0
+																button.play
+																	i.fas.fa-arrow-up
+														.row.test
+															.col
+																hr
+														.row.test
+															.col-4(style="font-size: 12px;")
+																i.fas.fa-briefcase.mr-1
+																span chưa xác định 
+															.col-4(style="font-size: 12px;")
+																span chưa xác định 
+															.col-4(style="font-size: 12px;")
+																span chưa xác định 
+														.row.test
+															.col
+																hr
+														.row.test
+															.col-6
+																i.fas.fa-user.mr-1
+																span Quốc Trung
+															.col-6.text-danger.text-right
+																span 6 months ago
+														.row.test
+															.col
+																hr
+														.row.test
+															.col-6
+																i.mr-1.fas.fa-cog
+																span Quốc Trung
+															.col-6.text-danger.text-right
+																span 5 months ago
+													.col-2.arrow(style="border-top-right-radius: 1rem;border-bottom-right-radius: 1rem;")
+														i.fas.fa-arrow-right
+								.col-sm-12.col-lg-4.mt-3
+									.card.border-dark.mb-3
+										.card-header.bg-success Hoàn thành
+											i.fas.fa-sync-alt
+										.card-body.text-dark
+											.container-fluid.a
+												.row
+													.col-10
+														.row.show
+															.col-10
+																.row
+																	.col-2.text-primary.tittle
+																		span N
+																	.col-8.pr-0
+																		p.text-primary(style="font-size: 15px;") 
+																			strong K-BD-9: 
+																			| Thử nghiệm
+																		p.text-info(style="font-size: 15px;") Thử nghiệm
+															.col-1.mt-3.pr-0.pl-0
+																button.play
+																	i.fas.fa-arrow-up
+														.row.test
+															.col
+																hr
+														.row.test
+															.col-4(style="font-size: 12px;")
+																i.fas.fa-briefcase.mr-1
+																span chưa xác định 
+															.col-4(style="font-size: 12px;")
+																span chưa xác định 
+															.col-4(style="font-size: 12px;")
+																span chưa xác định 
+														.row.test
+															.col
+																hr
+														.row.test
+															.col-6
+																i.fas.fa-user.mr-1
+																span Quốc Trung
+															.col-6.text-danger.text-right
+																span 6 months ago
+														.row.test
+															.col
+																hr
+														.row.test
+															.col-6
+																i.mr-1.fas.fa-cog
+																span Quốc Trung
+															.col-6.text-danger.text-right
+																span 5 months ago
+													.col-2.arrow(style="border-top-right-radius: 1rem;border-bottom-right-radius: 1rem;")
+														i.fas.fa-arrow-right
+										.card-body.text-dark
+											.container-fluid.a(style="border-left: 5px solid lightgreen")
+												.row
+													.col-10
+														.row.show
+															.col-10
+																.row
+																	.col-2.text-primary.tittle
+																		span(style="background: lightgreen;color: green;") M
+																	.col-9.pr-0
+																		p(style="font-size: 15px; color: green") 
+																			strong K-BD-9: FULL
+																			br
+																			i Xem PDF
+																			i.fas.fa-file-pdf.ml-2
+																		p.text-info(style="font-size: 15px;") Thử nghiệm
+															.col-2.mt-3.pr-0.pl-0
+																button.play
+																	i.fas.fa-arrow-up
+														.row.test
+															.col
+																hr
+														.row.test
+															.col-4(style="font-size: 12px;")
+																i.fas.fa-briefcase.mr-1
+																span chưa xác định 
+															.col-4(style="font-size: 12px;")
+																span chưa xác định 
+															.col-4(style="font-size: 12px;")
+																span chưa xác định 
+														.row.test
+															.col
+																hr
+														.row.test
+															.col-6
+																i.fas.fa-user.mr-1
+																span Quốc Trung
+															.col-6.text-danger.text-right
+																span 6 months ago
+														.row.test
+															.col
+																hr
+														.row.test
+															.col-6
+																i.mr-1.fas.fa-cog
+																span Quốc Trung
+															.col-6.text-danger.text-right
+																span 5 months ago
+													.col-2.arrow(style="border-top-right-radius: 1rem;border-bottom-right-radius: 1rem;")
+														i.fas.fa-arrow-right
+
+		script(src="/js/main.js")

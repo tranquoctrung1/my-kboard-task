@@ -1,0 +1,34 @@
+
+extends layout
+
+block body
+	main
+		.item
+			.loginform
+				.loginform-box
+					.loginform-box-inner
+						form(autocomple="off")
+							h2 
+								span Login Page
+							.form-group
+								.boxinput
+									input#emxampleInputEmail1.form-control(type="email" aria-describeldy="emailHelp" autocomple="nope")
+									p.mt-2.input
+									label(for="exampleInputEmail") Email address
+										span.text-danger.ml-2 *
+									small.mt-2#emailHelp.form-text.text-muted we'll never share your email with anyone else
+							.form-group
+								.boxinput
+									input#emxampleInputPassword1.form-control(type="password"  autocomple="new-password")
+									p.mt-2.input
+									label(for="emxampleInputPassword1") Password
+										span.text-danger.ml-2 *
+								.form-group.form-check.mt-4
+									input#exampleCheck1.form-check-input(type="checkbox")
+									label.form-check-label(for="exampleCheck1") Check me out
+									button.btn.btn-primary(type="submit") Submit
+								
+
+		script(src="/js/main.js")
+	
+	

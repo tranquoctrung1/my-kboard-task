@@ -1,0 +1,102 @@
+
+
+body
+	position: relative
+	.item
+		background: #b2bec3
+		display: flex
+		align-items: center
+		justify-content: center
+		height: 50rem
+		.loginform
+			background: white
+			display: flex
+			align-items: center
+			justify-content: center
+			width: 30rem
+			height: 30rem
+			position: relative
+			border: 1px solid black
+			z-index: 10
+			&:before
+				display: block
+				content: ''
+				position: absolute
+				transform: rotate(4deg)
+				width: 30rem
+				height: 30rem
+				top: 0
+				left: 0
+				background: white
+				border: 1px solid black
+				z-index: -2
+			&:after
+				display: block
+				content: ''
+				position: absolute
+				top: 0
+				right: 0
+				left: 0
+				bottom: 0
+				transform: rotate(-3deg)
+				width: 30rem
+				height: 30rem
+				background: white
+				border: 1px solid black
+				z-index: -3
+			.loginform-box
+				.loginform-box-inner
+					h2
+						position: relative
+						text-align: center
+						font-weight: bold
+						padding-bottom: 3rem
+						&:after
+							position: absolute
+							display: block
+							content: ''
+							width: 100%
+							height: 5px
+							top: 17px
+							left: 0
+							z-index: -1
+							background: radial-gradient(ellipse at center, black 0%, white 100%)
+							
+						span
+							background: white
+							padding: 5px
+					.form-group
+						position: relative
+						padding-top: 10px
+						.boxinput
+							.input
+								width: 100%
+								height: 3px
+								background: gray
+								margin-bottom: 0
+								&.active2
+									background: #2ecc71
+									transition: 1s all ease-in-out
+							input
+								border: 0
+								background: 0
+								z-index: 1
+								&:focus
+									border: 0
+									box-shadow: none
+									outline: none
+									
+							
+							label
+								position: absolute
+								top: 15px
+								right: 0
+								bottom: 0
+								left: 0
+								display: flex
+								z-index: -1
+								font-size: 1.3rem
+								transition: .5s all ease-in-out
+								&.active
+									font-size: 1rem
+									top: -15px
